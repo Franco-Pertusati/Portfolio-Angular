@@ -1,0 +1,11 @@
+.bentoGrid {
+    display: grid;
+    grid-template-columns: repeat(6, 144px);
+    grid-template-rows: repeat(6, 144px);
+    gap: 24px;
+}
+
+.wasd {
+    width: 100%;
+    height: 100%;
+}

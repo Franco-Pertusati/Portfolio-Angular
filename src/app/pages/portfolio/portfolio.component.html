@@ -1,0 +1,54 @@
+<div class="bg-seasalt px-20 max-w-6xl mx-auto rounded-xl text-fontent mb-24">
+    <section class="py-32 grid grid-cols-2 gap-y-8">
+        <div class="place-self-center">
+            <h1 class="text-8xl text-mainColor">
+                PERTUSATI FRANCO
+            </h1>
+        </div>
+        <div class="h-fit w-full grid place-items-end place-self-center row-span-2">
+            <div class="size-96 bg-french_gray rounded-full"></div>
+        </div>
+        <div class=" text-xl">
+            <p>
+                Desarrollador Front-end con conocimientos en <strong class="text-mainColor">Angular 17</strong> y su
+                nueva sintaxis, <strong class="text-mainColor">HTML, CSS, JS, Tailwind</strong> y
+                controladores
+                de
+                versiones como <strong class="text-mainColor">Git</strong> y <strong
+                    class="text-mainColor">GitHub.</strong>
+            </p>
+            <br>
+            <p>
+                Si bien no cuento con experiencia laboral en ninguna empresa relacionada a la tecnologia, algunos de mis
+                proyectos tienen clientes reales.
+            </p>
+        </div>
+        <div class="w-full flex justify-center gap-4 col-span-2">
+            <app-ico-btn [textContent]="'LinkedIn'">
+                <i class="bi bi-linkedin"></i>
+            </app-ico-btn>
+            <app-ico-btn [textContent]="'Descargar CV'">
+                <i class="bi bi-download"></i>
+            </app-ico-btn>
+        </div>
+    </section>
+    <section class="">
+        <h2 class="text-6xl text-center mb-20">Proyectos</h2>
+        <app-bento-grid />
+    </section>
+    <section class="">
+        <h2 class="mt-24 mb-10 text-6xl text-center">Sobre mi</h2>
+        <p class="mb-10">
+            Hola, soy Franco Pertusati, me introduje en elmundo del desarrollo web cuando ayudaba a mi familia a abrir
+            un bar, como hacia falta un sistema de gestion gastronomica para controlar los pedidos de las mesas y mejorar
+            la coordinacion entre el salon la caja y la cocina, me propuse a desarrollar el mio propio con nada mas que
+            html, css y js.
+        </p>
+        <div class="w-full flex justify-center">
+            <app-rounded-btn>
+                Contacto
+            </app-rounded-btn>
+        </div>
+        <div class="h-10"></div>
+    </section>
+</div>
