@@ -1,6 +1,11 @@
 <div class="p-4 bg-seasalt rounded-lg">
     <h1 class="text-2xl mb-4 font-bold">{{ data.title }}</h1>
-    <p class="mb-4">{{ data.description }}</p>
+    <p class="mb-4 text-lg">{{ data.description }}</p>
+    <div class="mb-4">
+        @for (item of data.features; track $index) {
+            <li class="ml-4">{{item}}</li>
+            }
+    </div>
     <div class="w-full flex justify-center gap-4 px-4">
         <app-ico-btn [textContent]="'Repositorio'">
             <i class="bi bi-github"></i>

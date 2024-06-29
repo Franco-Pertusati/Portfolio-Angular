@@ -14,6 +14,7 @@ import { ProjectCardDialogComponent } from '../dialog/dialog.component';
 export class ProjectCardComponent {
   @Input() title = '';
   @Input() description = '';
+  @Input() features: string[] = [];
 
   constructor(public dialog: Dialog) {}
 
@@ -23,8 +24,8 @@ export class ProjectCardComponent {
       data: {
         title: this.title,
         description: this.description,
+        features: this.features,
       }
     });
   }
-
 }
