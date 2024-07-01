@@ -10,7 +10,5 @@ import { IcoBtnComponent } from '../ico-btn/ico-btn.component';
 })
 
 export class ProjectCardDialogComponent {
-  
   constructor(@Inject(DIALOG_DATA) public data: any) {} // Inyecta DIALOG_DATA para obtener los datos del diálogo
-
 }

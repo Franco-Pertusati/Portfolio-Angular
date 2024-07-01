@@ -15,23 +15,32 @@
         'Reporte diario de ventas',
         'Venta en mesas',
         'Traslado de consumos entre mesas'
-      ]"
-        class="col-span-4 row-span-4">
-        <div class="p-4">
+      ]" class="col-span-4 row-span-4">
+        <div class="grid grid-cols-2 grid-rows-2 w-fit gap-2">
+            <img class="rounded-md h-full border-2 border-seasalt" src="/assets/sg1.png" alt="">
+            <img class="rounded-md h-full border-2 border-seasalt" src="/assets/sg2.png" alt="wasdad">
+            <img class="rounded-md h-full col-span-2 border-2 border-seasalt" src="/assets/sg3.png" alt="wasdad">
         </div>
     </app-project-card>
     <app-project-card [title]="'Clon de Trello'"
-        [description]="'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'"
+        [description]="'Un clon hecho para aprender a usar Angular CDK y Angular Material y así poder implementar fácilmente funcionalidades como el drag and drop, overlays o dialogos.'"
         class="col-span-2 row-span-2" />
     <app-project-card [title]="'POS para negocios'"
         [description]="'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'"
         class="col-span-2 row-span-2" />
     <app-project-card [title]="'E-Comerce con Angular'"
-        [description]="'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'"
-        class="col-span-2 row-span-2" />
+        [description]="'Proyecto que me sirvió de practica para poder entender lo básico de angular como el routing y llamadas a APIs.'"
+        class="col-span-2 row-span-2">
+        <img class="h-full rounded-md" src="/assets/ec.png" alt="">
+        <img class="h-full rounded-md" src="/assets/ec2.jpeg" alt="">
+    </app-project-card>
     <app-project-card [title]="'Juegos hechos en Angular y Unity 3d'"
-        [description]="'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'"
-        class="col-span-3 row-span-2" />
+        [description]="'Uno es un juego en 3D hecho en Unity para Android en el que le hice los assets con Blender y la programación en c#. El otro juego es una aventura grafica hecha en Angular para participar en una game jam de itch.io'"
+        class="col-span-3 row-span-2">
+        <img class="h-full rounded-md border-2 border-seasalt" src="/assets/game1.jpeg" alt="">
+        <img class="h-full rounded-md border-2 border-seasalt" src="/assets/game2.png" alt="">
+        <img class="h-full rounded-md border-2 border-seasalt" src="/assets/game3.png" alt="">
+    </app-project-card>
     <div class="row-span-2">
         <app-go-to-git-hub />
     </div>

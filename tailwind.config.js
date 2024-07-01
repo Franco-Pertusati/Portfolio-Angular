@@ -38,7 +38,7 @@ module.exports = {
         DEFAULT: "#212529",
       },
       mainColor: {
-        DEFAULT: "#e76f51",
+        DEFAULT: "#722df9",
       },
     },
   },

@@ -1,17 +1,21 @@
-<div class="p-4 bg-seasalt rounded-lg">
+<div class="p-4 bg-seasalt rounded-lg text-fontent">
     <h1 class="text-2xl mb-4 font-bold">{{ data.title }}</h1>
     <p class="mb-4 text-lg">{{ data.description }}</p>
     <div class="mb-4">
         @for (item of data.features; track $index) {
-            <li class="ml-4">{{item}}</li>
-            }
+        <li class="ml-4">{{item}}</li>
+        }
     </div>
     <div class="w-full flex justify-center gap-4 px-4">
+        @if (data.landingPage) {
         <app-ico-btn [textContent]="'Repositorio'">
             <i class="bi bi-github"></i>
         </app-ico-btn>
+        }
+        @if (data.gitPage) {
         <app-ico-btn [textContent]="'Landing page'">
             <i class="bi bi-link-45deg"></i>
         </app-ico-btn>
+        }
     </div>
 </div>

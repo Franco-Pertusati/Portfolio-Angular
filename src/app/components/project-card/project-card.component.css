@@ -7,6 +7,7 @@
 
 .cardContainer {
   margin-left: 25%;
+  margin-bottom: 16px;
   overflow: hidden;
   transition: all ease 0.5s;
 }
@@ -20,6 +21,8 @@
   height: 100%;
   border-radius: 8px;
   z-index: 1;
+  display: grid;
+  grid-template-rows: 42px 1fr;
 }
 
 .tools {
