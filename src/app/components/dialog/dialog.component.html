@@ -7,13 +7,15 @@
         }
     </div>
     <div class="w-full flex justify-center gap-4 px-4">
-        @if (data.landingPage) {
-        <app-ico-btn [textContent]="'Repositorio'">
+        @if (data.repositoryPage) {
+        <app-ico-btn [destiny]="data.repositoryPage">
+            Repositorio
             <i class="bi bi-github"></i>
         </app-ico-btn>
         }
-        @if (data.gitPage) {
-        <app-ico-btn [textContent]="'Landing page'">
+        @if (data.landingPage) {
+        <app-ico-btn [destiny]="data.landingPage">
+            Landing page
             <i class="bi bi-link-45deg"></i>
         </app-ico-btn>
         }

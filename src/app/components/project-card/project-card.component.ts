@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, Input, input } from '@angular/core';
 import { Dialog, DIALOG_DATA, DialogModule } from '@angular/cdk/dialog';
 import { ProjectCardDialogComponent } from '../dialog/dialog.component';
 
@@ -8,13 +8,14 @@ import { ProjectCardDialogComponent } from '../dialog/dialog.component';
   standalone: true,
   imports: [CommonModule, ProjectCardDialogComponent],
   templateUrl: './project-card.component.html',
-  styleUrl: './project-card.component.css'
+  styleUrl: './project-card.component.css',
 })
-
 export class ProjectCardComponent {
   @Input() title = '';
   @Input() description = '';
   @Input() features: string[] = [];
+  @Input() landingPage: string = '';
+  @Input() repositoryPage: string = '';
 
   constructor(public dialog: Dialog) {}
 
@@ -25,7 +26,9 @@ export class ProjectCardComponent {
         title: this.title,
         description: this.description,
         features: this.features,
-      }
+        landingPage: this.landingPage,
+        repositoryPage: this.repositoryPage,
+      },
     });
   }
 }

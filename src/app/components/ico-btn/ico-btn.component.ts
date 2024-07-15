@@ -8,6 +8,5 @@ import { text } from 'stream/consumers';
   templateUrl: './ico-btn.component.html',
 })
 export class IcoBtnComponent {
-  @Input() textContent = '';
   @Input() destiny = '';
 }
