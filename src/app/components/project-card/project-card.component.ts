@@ -21,7 +21,7 @@ export class ProjectCardComponent {
 
   openDialog() {
     this.dialog.open(ProjectCardDialogComponent, {
-      width: '500px',
+      width: '660px',
       data: {
         title: this.title,
         description: this.description,

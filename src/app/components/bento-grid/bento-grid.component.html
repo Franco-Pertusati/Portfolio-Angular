@@ -1,9 +1,8 @@
 <div class="bentoGrid">
-    <app-project-card [title]="'Sistema gastronomico'"
-        [description]="'Un software que hacia falta en el bar en el que trabajaba para agilizar la administración de pedidos de las mesas las ventas del mostrador y llevar una cuenta clara en la caja. Dado que en ese momento mis conocimientos se limitaban a HTML, CSS y JS lo hice completamente en vanilla lo que hizo dificultosa su escalabilidad. Alguna de las funcionalidades que ofrece:'"
+    <app-project-card [title]="'Software para locales gastronómicos'"
+        [description]="'Un software que hacia falta en el bar en el que trabajaba para agilizar la administración de pedidos de las mesas las ventas del mostrador y llevar una cuenta clara en la caja. Dado que en ese momento mis conocimientos se limitaban a HTML, CSS y JS lo hice completamente en vanilla lo que hizo dificultosa su escalabilidad. Tengo en mente crear uno pero en Angular 18 utilizando Angular material y CDK. Alguna de las funcionalidades que ofrece son:'"
         [landingPage]="'https://franco-pertusati.github.io/Gastronimic-system-Pertusati/'"
-        [repositoryPage]="'https://github.com/Franco-Pertusati/Gastronimic-system-Pertusati'"
-        [features]="[
+        [repositoryPage]="'https://github.com/Franco-Pertusati/Gastronimic-system-Pertusati'" [features]="[
         'Ventas por mostrador',
         'Movimientos de caja',
         'Múltiples medios de pago',
@@ -21,13 +20,20 @@
         <div class="grid grid-cols-2 grid-rows-2 w-fit gap-2">
             <img class="rounded-md h-full border-2 border-seasalt" src="/assets/sg1.png" alt="">
             <img class="rounded-md h-full border-2 border-seasalt" src="/assets/sg2.png" alt="wasdad">
-            <img class="rounded-md h-full col-span-2 border-2 border-seasalt" src="/assets/sg3.png" alt="wasdad">
+            <img class="rounded-md h-full w-full col-span-2 border-2 border-seasalt" src="/assets/sg3.png" alt="wasdad">
         </div>
     </app-project-card>
     <app-project-card [title]="'Clon de Trello'"
-        [description]="'Un clon hecho para aprender a usar Angular CDK y Angular Material y así poder implementar fácilmente funcionalidades como el drag and drop, overlays o dialogos.'"
-        class="col-span-2 row-span-2" />
-    <app-project-card [title]="'POS para negocios'"
+        [description]="'Un clon hecho para aprender a usar Angular CDK y Angular Material y así poder implementar fácilmente funcionalidades como el drag and drop, overlays y dialogos. También me a sido de ayuda para terminar de afianzar mi conocimiento en Tailwind.'"
+        [landingPage]="'https://franco-pertusati.github.io/Trello-Clon/'"
+        [repositoryPage]="'https://github.com/Franco-Pertusati/Trello-Clon'"
+        class="col-span-2 row-span-2">
+        <div class="flex gap-2">
+            <img class="rounded-md border-2 border-seasalt" src="/assets/tc1.png" alt="">
+            <img class="rounded-md border-2 border-seasalt" src="/assets/tc2.png" alt="">
+        </div>
+    </app-project-card>
+    <app-project-card [title]="'Software para clínicas dentales'"
         [description]="'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'"
         class="col-span-2 row-span-2" />
     <app-project-card [title]="'E-Comerce con Angular'"
